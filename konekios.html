@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konekios</title>
+    <style>
+      .container {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        overflow: hidden;
+      }
+
+      .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="shadow-md text-sm">
+      <div class="flex justify-between items-center py-4 mx-12">
+        <div>
+          <img src="./assets/konekios.png" alt="konekios_logo" class="h-5" />
+        </div>
+        <div class="flex font-medium">
+          <div class="flex-auto mx-4 cursor-pointer">Kategori</div>
+          <div class="flex-auto mx-4 cursor-pointer">Template</div>
+          <div class="flex-auto mx-4 cursor-pointer">Harga</div>
+        </div>
+        <div class="flex font-bold">
+          <div
+            class="flex-auto mx-4 p-1 bg-gradient-to-r hover:from-indigo-300 hover:via-purple-300 hover:to-pink-300 hover:text-white text-black rounded-full cursor-pointer px-2 py-1"
+          >
+            Login
+          </div>
+          <div
+            class="flex-auto mx-4 bg-gradient-to-r hover:from-indigo-300 hover:via-purple-300 hover:to-pink-300 hover:text-white text-black px-2 py-1 rounded-full cursor-pointer"
+          >
+            Sign Up
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="mx-12">
+      <main>
+        <div
+          class="text-center px-52 py-10 grid gap-y-4 text-center"
+          style="padding-left: 26%; padding-right: 26%"
+        >
+          <div>
+            <h1 class="text-4xl font-bold">
+              Tempatmu buat toko online, link in bio, portofolio, company
+              profile, dan blog
+            </h1>
+          </div>
+          <div>
+            <p class="font-light text-slate-100 text-md my-2">
+              Sudah saatnya #BerubahDigital dari sekarang.
+            </p>
+          </div>
+          <div class="flex justify-center space-x-4 text-sm font-bold">
+            <div class="cursor-pointer">
+              <p
+                class="sm:w-full bg-gradient-to-r hover:from-indigo-300 hover:via-purple-300 hover:to-pink-300 hover:text-white text-black rounded-full shadow-md py-2 px-6"
+              >
+                Coba gratis!
+              </p>
+            </div>
+            <div class="cursor-pointer">
+              <p
+                class="bg-gradient-to-r hover:from-indigo-300 hover:via-purple-300 hover:to-pink-300 hover:text-white text-black rounded-full shadow-md py-2 px-6"
+              >
+                Desain Claimque
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <article>
+        <div><img src="./assets/main_image.png" alt="main_image" /></div>
+
+        <div
+          class="my-10 text-3xl font-bold lg:w-1/4 py-10 flex justify-center"
+        >
+          <div>
+            <p>
+              Kamu mau buat <span class="text-purple-400">Website</span> apaah?
+              🤔
+            </p>
+          </div>
+        </div>
+        <div class="card-container flex flex-row gap-x-6" id="card-container" />
+      </article>
+      <div class="my-10 flex p-8 rounded-md bg-indigo-300">
+        <div class="flex gap-x-20 lg:flex-row sm:flex-col">
+          <div class="flex">
+            <div class="flex-wrap">
+              <h1 class="text-4xl text-white font-bold xl:text-gray-200">
+                Dapatkan Penawaran Menarik! 💎💎💎
+              </h1>
+            </div>
+          </div>
+          <div class="flex flex-row items-center gap-4">
+            <div>
+              <form class="mx-auto w-96">
+                <div class="relative">
+                  <div
+                    class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"
+                  >
+                    <svg
+                      class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 16"
+                    >
+                      <path
+                        d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"
+                      />
+                      <path
+                        d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"
+                      />
+                    </svg>
+                  </div>
+                  <input
+                    type="text"
+                    id="email-address-icon"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="masukkan email..."
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="p-4">
+              <button
+                type="submit"
+                class="hover:text-white bg-white hover:bg-indigo-500 focus:ring-4 focus:outline-none focus:ring-sky-300 font-bold rounded-full text-sm px-5 py-2.5 text-center dark:bg-sky-300 dark:hover:bg-sky-700 dark:focus:ring-sky-300"
+              >
+                Kirim
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="flex justify-between">
+          <div class="space-y-5">
+            <div>
+              <img
+                src="./assets/konekios.png"
+                alt="konekios_logo"
+                class="h-5"
+              />
+            </div>
+            <div class="text-sm">
+              Sudah saatnya #BeraniDigital dari sekarang.
+            </div>
+            <div class="text-xs">Powered by Koneksi Group.</div>
+            <div class="flex space-x-4">
+              <img
+                src="./assets/instagram.png"
+                alt="instagram"
+                class="cursor-pointer"
+              />
+              <img
+                src="./assets/twitter.png"
+                alt="twitter"
+                class="cursor-pointer"
+              />
+              <img
+                src="./assets/facebook.png"
+                alt="facebook"
+                class="cursor-pointer"
+              />
+              <a
+                href="https://www.linkedin.com/in/samintho/"
+                class="cursor-pointer"
+              >
+                <img src="./assets/linkedin.png" alt="linkedin" />
+              </a>
+            </div>
+          </div>
+          <div class="space-y-5">
+            <div class="text-gray-500">Kategori</div>
+            <div class="text-sm">UMKM</div>
+            <div class="text-sm">Company Profile</div>
+            <div class="text-sm">Personal</div>
+          </div>
+          <div class="space-y-5">
+            <div class="text-gray-500">Pusat Bantuan</div>
+            <div class="text-sm">Syarat dan Ketentuan</div>
+            <div class="text-sm">Kebijakan Privasi</div>
+          </div>
+          <div class="space-y-5">
+            <div class="text-gray-500">Layanan</div>
+            <div class="text-sm">Fitur</div>
+            <div class="text-sm">Konekios Pro</div>
+            <div class="text-sm">Promo</div>
+            <div class="text-sm">Desain Website</div>
+            <div class="text-sm">Konekios x Legalisasi</div>
+          </div>
+          <div class="space-y-5">
+            <div class="text-gray-500">Perusahaan</div>
+            <div class="text-sm">Tentang</div>
+            <div class="text-sm">Karir</div>
+            <div class="text-sm">Kontak Kami</div>
+            <div class="text-sm">Blog</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const cardsData = [
+          {
+            title: "Toko Online",
+            text: "Punya website toko sendiri tanpa potongan marketplace dan tokomu lebih mudah ditemukan di Google.",
+            image: "./assets/toko_online.png",
+            color: "bg-pink-200",
+          },
+          {
+            title: "Company Profile",
+            text: `Perusahaan makin kredibel dengan desain web yang profesional. Ngedit ga ribet, tanpa admin!`,
+            image: "./assets/company_profile.png",
+            color: "bg-green-200",
+          },
+          {
+            title: "Personal Website",
+            text: "Buat website biar profilmu makin keren dan makin profesional. side-hustle atau nyari kerja, libas!",
+            image: "./assets/personal_website.png",
+            color: "bg-blue-200",
+          },
+        ];
+
+        const cardContainer = document.getElementById("card-container");
+
+        cardsData.forEach((card) => {
+          const cardElement = document.createElement("div");
+          cardElement.className = "card";
+          cardElement.innerHTML = `
+          <div class="card-body ${card.color} px-8 pt-8 rounded-lg h-full">
+            <h2 class="card-title font-bold">${card.title}</h2>
+            <p class="card-text text-xs">${card.text}</p>
+            <img src="${card.image}" class="mt-5" alt="${card.title}">
+            </div>
+        `;
+          cardContainer.appendChild(cardElement);
+        });
+      });
+    </script>
+  </body>
+</html>
